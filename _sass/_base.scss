@@ -185,6 +185,7 @@ header {
         width: 100%;
 
         .header-content-inner {
+
             h1 {
                 font-weight: 700;
                 text-transform: uppercase;
@@ -384,4 +385,45 @@ img::-moz-selection {
 
 body {
     -webkit-tap-highlight-color: $theme-dark;
+}
+//estilos de opinion de clientes
+.reviews-container{
+    margin-top:40px;
+}
+
+.review-card{
+    background:white;
+    padding:20px;
+    border-radius:8px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    height:100%;
+}
+
+.review-header{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:10px;
+}
+
+.review-header img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.review-card h4{
+    margin:0;
+    font-size:16px;
+}
+
+.stars{
+    color:#f4b400;
+    font-size:18px;
+}
+
+.review-text{
+    font-size:14px;
+    line-height:1.5;
 }
