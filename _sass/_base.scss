@@ -198,9 +198,9 @@ header {
             }
 
             p {
-                font-weight: 500;
-                //color: white;
-                font-size: 16px;
+                font-weight: 600;
+                color: rgb(231, 155, 14);
+                font-size: 18px;
                 margin-bottom: 50px;
             }
         }
@@ -426,4 +426,157 @@ body {
 .review-text{
     font-size:14px;
     line-height:1.5;
+}
+
+//estilos seccion documentacion
+.destinos{
+    margin-top:40px;
+}
+
+.destino-card{
+    background:#f5f5f5;
+    margin-bottom:25px;
+    border-radius:4px;
+    overflow:hidden;
+}
+
+.destino-header{
+    background:#eeeeee;
+    padding:15px 20px;
+    font-size:18px;
+    font-weight:600;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    cursor:pointer;
+}
+
+.destino-header.active{
+    background:#e61c1c;
+    color:white;
+}
+
+.destino-header .icon{
+    font-size:22px;
+}
+
+.destino-content{
+    padding:20px;
+}
+
+.destino-content ul{
+    margin-top:15px;
+}
+
+.destino-content ul li{
+    margin-bottom:8px;
+}
+
+.destino-content .btn{
+    margin-top:15px;
+}
+
+//estilos seccion servicios
+.certificados-container{
+    margin-top:40px;
+}
+
+.certificado-card{
+    padding:20px;
+}
+
+.certificado-img{
+    margin-bottom:20px;
+    border-radius:6px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+.certificado-card h3{
+    font-size:26px;
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+.certificado-card p{
+    font-size:15px;
+    color:#666;
+    line-height:1.6;
+}
+
+.btn-outline-dark{
+    border:2px solid #000;
+    padding:10px 25px;
+    border-radius:30px;
+    margin-top:15px;
+    display:inline-block;
+}
+
+.btn-outline-dark:hover{
+    background:#000;
+    color:#fff;
+}
+
+
+//estilos seccion nuestro equipo
+
+.team-section{
+    padding:80px 0;
+    text-align:center;
+    color:white;
+
+    /* OPCION fondo */
+    background-image:url('../img/bg-pets.jpg');//'../img/header_mascotas.webp'
+    background-size:cover;
+    background-position:center;
+    position:relative;
+}
+
+.team-section::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+}
+
+.team-section .container{
+    position:relative;
+    z-index:2;
+}
+
+.team-title{
+    font-size:36px;
+    margin-bottom:50px;
+}
+
+.team-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+}
+
+.team-member{
+    width:160px;
+}
+
+.team-member img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:10px;
+    border:4px solid white;
+}
+
+.team-member h4{
+    font-size:16px;
+    margin:5px 0;
+}
+
+.team-member p{
+    font-size:14px;
+    opacity:0.9;
 }
